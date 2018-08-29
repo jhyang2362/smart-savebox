@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container home loadcell">
+      <% include ./header %>
+      <h2> 목표 금액 </h2>
+      <h1><%= goal %> 원</h1>
+      <div class="buttons">
+          <a class="btn btn-default" href="/loadcell/goalmoney">목표 금액 수정</a>
+      </div>
+      <h2> 현재 금액 </h2>
+      <h1><%= sum %> 원</h1>
+      <div class="buttons">
+          <a class="btn btn-default" href="/loadcell">새로고침</a>
+          <a class="btn btn-default" href="/loadcell">초기화</a>
+      </div>
+      <div class="buttons">
+
+      </div>
+    </div>
+  </body>
+</html>
